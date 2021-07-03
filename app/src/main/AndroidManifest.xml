@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pendaftaranskripsi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PendaftaranWisuda">
+        <activity
+            android:name="com.example.pendaftaranskripsi.Splasschreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.pendaftaranskripsi.status"></activity>
+        <activity android:name="com.example.pendaftaranskripsi.user_info" />
+        <activity android:name="com.example.pendaftaranskripsi.Login_activity" />
+        <activity android:name="com.example.pendaftaranskripsi.TestActivity" />
+        <activity android:name="com.example.pendaftaranskripsi.profile_activity" />
+        <activity android:name="com.example.pendaftaranskripsi.password_rest" />
+        <activity android:name="com.example.pendaftaranskripsi.MainActivity" />
+        <activity android:name="com.example.pendaftaranskripsi.changeEmail" />
+        <activity android:name="com.example.pendaftaranskripsi.menu_utama_ano">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:background="#F4DD45"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/pns" />
+
+    <LinearLayout
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:id="@+id/widget28"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcometxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:text="Selamat Datang Calon Angkatan Perangkat Desa \nSilahkan Menginput Data Anda\n Dengan Benar \n"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inputdata"
+        android:layout_below="@id/widget28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="Profile"
+        android:text="Input Data Diri"
+        app:backgroundTint="#7197F6"
+        app:cornerRadius="25dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+
+
+    <Button
+        android:id="@+id/lihatdata_btn"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="viewInput"
+        android:text="Lihat Data Inputan"
+        app:backgroundTint="#4741F1"
+        app:cornerRadius="28dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/status_btn"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lihatdata_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="changeEmail"
+        android:text="Lihat Status"
+        app:backgroundTint="#443EA6"
+        app:cornerRadius="28dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        />
+
+
+</RelativeLayout>
